@@ -37,6 +37,9 @@ public class Lesson08_DateTime implements Lesson {
         System.out.println("today=" + today + " nextWeek=" + nextWeek + " periodDays=" + period.getDays());
         System.out.println("now=" + now + " meetingLocal=" + formatted + " meetingUTC=" + meetingUtc);
         System.out.println("duration(ms)=" + d.toMillis() + " parsed1=" + parsed);
+        // LocalDate end1 = today.with(java.time.temporal.TemporalAdjusters.lastDayOfMonth());
+        // long day = java.tome.temporal.ChronoUnit.DAYS.between(today, end1);
+        // System.out.println("Now to the end of the month is " + day );
     }
 
     /*

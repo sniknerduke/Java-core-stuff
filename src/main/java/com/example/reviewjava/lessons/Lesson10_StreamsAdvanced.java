@@ -39,7 +39,8 @@ public class Lesson10_StreamsAdvanced implements Lesson {
                 .collect(Collectors.summarizingDouble(String::length));
         System.out.println("length stats -> " + stats);
 
-        String joined = words.stream().collect(Collectors.joining(", ", "[", "]"));
+        String joined = words.stream()
+                .collect(Collectors.joining(", "));
         System.out.println("joined -> " + joined);
     }
 
