@@ -10,6 +10,12 @@ public class Lesson11_Optionals implements Lesson {
 
     @Override
     public void run() {
+        /*
+     * QUICK NOTES
+     * - Optional is for return types, not fields/params; avoid Optional.get() without isPresent().
+     * - orElse eagerly builds the default; orElseGet is lazy; orElseThrow throws if empty.
+     * - map transforms when present; flatMap chains Optionals without nesting.
+     */
         Optional<String> maybeName = Optional.of("Alice");
         Optional<Integer> maybeLen = maybeName.map(String::length);
         System.out.println("len? " + maybeLen.orElse(-1));
@@ -31,12 +37,7 @@ public class Lesson11_Optionals implements Lesson {
         System.out.println("filtered present? " + filtered.isPresent());
     }
 
-    /*
-     * QUICK NOTES
-     * - Optional is for return types, not fields/params; avoid Optional.get() without isPresent().
-     * - orElse eagerly builds the default; orElseGet is lazy; orElseThrow throws if empty.
-     * - map transforms when present; flatMap chains Optionals without nesting.
-     */
+    
 
     static String expensive(String tag) {
         System.out.println("expensive(" + tag + ") called");

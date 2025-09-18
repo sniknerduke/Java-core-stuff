@@ -17,6 +17,7 @@ import com.example.reviewjava.lessons.Lesson08_DateTime;
 import com.example.reviewjava.lessons.Lesson09_FilesNio;
 import com.example.reviewjava.lessons.Lesson10_StreamsAdvanced;
 import com.example.reviewjava.lessons.Lesson11_Optionals;
+import com.example.reviewjava.lessons.Lesson12_Testing;
 
 public class LessonRunner {
     private static final List<Lesson> LESSONS = List.of(
@@ -30,7 +31,8 @@ public class LessonRunner {
         new Lesson08_DateTime(),
         new Lesson09_FilesNio(),
         new Lesson10_StreamsAdvanced(),
-        new Lesson11_Optionals()
+        new Lesson11_Optionals(),
+        new Lesson12_Testing()
     );
 
     public static void main(String[] args) {
