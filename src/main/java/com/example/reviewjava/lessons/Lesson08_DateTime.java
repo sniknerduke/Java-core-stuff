@@ -36,7 +36,7 @@ public class Lesson08_DateTime implements Lesson {
 
         System.out.println("today=" + today + " nextWeek=" + nextWeek + " periodDays=" + period.getDays());
         System.out.println("now=" + now + " meetingLocal=" + formatted + " meetingUTC=" + meetingUtc);
-        System.out.println("duration(ms)=" + d.toMillis() + " parsed=" + parsed);
+        System.out.println("duration(ms)=" + d.toMillis() + " parsed1=" + parsed);
     }
 
     /*
